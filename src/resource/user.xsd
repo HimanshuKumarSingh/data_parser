@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xs:element name="ListOfUsers" type="ListOfUsersType"/>
+  <xs:complexType name="usersType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="userName"/>
+      <xs:element type="xs:string" name="firstName"/>
+      <xs:element type="xs:string" name="lastName"/>
+      <xs:element type="xs:string" name="sex"/>
+      <xs:element type="xs:byte" name="age"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="ListOfUsersType">
+    <xs:sequence>
+      <xs:element type="usersType" name="users" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
