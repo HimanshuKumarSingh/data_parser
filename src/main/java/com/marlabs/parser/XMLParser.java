@@ -13,7 +13,6 @@ import javax.xml.bind.Unmarshaller;
 import com.marlabs.beans.ListOfUsers;
 import com.marlabs.beans.User;
 import com.marlabs.log.LogTrace;
-import com.marlabs.validate.XMLValidator;
 
 public class XMLParser {
 //	--------------WRITE XML FILE FROM JAVA BEANS---------------------------------------
